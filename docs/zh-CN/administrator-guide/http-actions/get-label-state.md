@@ -30,7 +30,7 @@ under the License.
         get_label_state: get label's state
         
     SYNOPSIS
-        curl -u user:passwd http://host:port/api/{db}/{label}/_state
+        curl -u user:passwd http://host:port/api/{db}/{label}/_state?{label}
 
     DESCRIPTION
         该命令用于查看一个Label对应的事务状态
@@ -52,7 +52,7 @@ under the License.
 ## example
 
     1. 获得testDb, testLabel的状态
-        curl -u root http://host:port/api/testDb/testLabel/_state
+        curl -u root http://host:port/api/testDb/testLabel/_state?label=testLabel
  
 ## keyword
     GET, LABEL, STATE
